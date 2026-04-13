@@ -7,7 +7,6 @@ public class SaveFile : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI logTextUI;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         string saveDir = Path.Combine(Application.persistentDataPath, "SaveData");
