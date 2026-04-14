@@ -1,4 +1,24 @@
 ﻿Id,String
-HELLO,ハロー
-BYE,バイ
-YOU DIE,ユー·ダイ
+HELLO,やあ
+BYE,じゃあな
+YOU DIE,あなたは死ぬ
+Item1Name,?
+Item2Name,盾
+Item3Name,弓
+Item4Name,ポ?ション
+Item1Desc,これは?だ。
+Item2Desc,これは盾だ。
+Item3Desc,これは弓だ。
+Item4Desc,これはポ?ションだ。
+Character1Name,AAA
+Character2Name,BBB
+Character3Name,CCC
+Character4Name,DDD
+Character1Desc,名前は AAA
+Character2Desc,名前は BBB
+Character3Desc,名前は CCC
+Character4Desc,名前は DDD
+10,攻撃は 10 です
+20,攻撃は 20 です
+5,攻撃は 5 です
+50,攻撃は 50 です

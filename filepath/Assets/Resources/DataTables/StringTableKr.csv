@@ -2,3 +2,23 @@
 HELLO,안녕
 BYE,잘가
 YOU DIE,너 죽음
+Item1Name,검
+Item2Name,방패
+Item3Name,활 
+Item4Name,물약 
+Item1Desc,이것은 검이다.
+Item2Desc,이것은 방패다.
+Item3Desc,이것은 활이다.
+Item4Desc,이것은 물약이다.
+Character1Name,AAA
+Character2Name,BBB
+Character3Name,CCC
+Character4Name,DDD
+Character1Desc,이름은 AAA
+Character2Desc,이름은 BBB
+Character3Desc,이름은 CCC
+Character4Desc,이름은 DDD
+10,공격력은 10
+20,공격력은 20
+5,공격력은 5
+50,공격력은 50

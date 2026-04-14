@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class DataTbleTest : MonoBehaviour
+public class DataTableTest : MonoBehaviour
 {
     public string NameStringTablekr = "StringTableKr";
     public string NameStringTableEn = "StringTableEn";
-    public string NameStringTablejp = "StringTablejp";
+    public string NameStringTableJp = "StringTableJp";
 
     private void Update()
     {
@@ -42,7 +42,7 @@ public class DataTbleTest : MonoBehaviour
     public void OnClickStringTableJp()
     {
         var table = new StringTable();
-        table.Load(NameStringTablejp);
+        table.Load(NameStringTableJp);
         Debug.Log(table.Get("BYE"));
     }
 }

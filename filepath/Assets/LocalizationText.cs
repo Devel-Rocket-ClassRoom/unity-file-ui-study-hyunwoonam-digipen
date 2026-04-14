@@ -33,9 +33,15 @@ public class LocalizationText : MonoBehaviour
     private void ChangeLanguage()
     {
 #if UNITY_EDITOR
-
-       
+        LocalizationText[] allTexts = FindObjectsByType<LocalizationText>(FindObjectsSortMode.None);
         
+        foreach (LocalizationText loc in allTexts)
+        {
+            loc.editorLang = this.editorLang;
+
+            loc.OnChangeLanguage(this.editorLang);
+        }
+
 #endif
     }
 
@@ -58,7 +64,7 @@ public class LocalizationText : MonoBehaviour
 #endif
     }
 
-    private void OnChangedId()
+    public void OnChangedId()
     {
         text.text = DataTableManager.StringTable.Get(id);
         Debug.Log(text.text);
