@@ -22,3 +22,33 @@ Character4Desc,名前は DDD
 20,攻撃は 20 です
 5,攻撃は 5 です
 50,攻撃は 50 です
+NAME,名前
+DESC,説明
+TYPE,タイプ
+VALUE,バリュー
+COST,コスト
+button1,読み込み
+button2,保存
+button3,項目作成
+button4,項目削除
+SORT,並び替え
+SORT_DATE_ASC,日付 (昇順)
+SORT_DATE_DESC,日付 (降順)
+SORT_NAME_ASC,名前 (昇順)
+SORT_NAME_DESC,名前 (降順)
+FILTER,フィルター
+FILTER_ALL,すべて
+FILTER_WEAPON,武器
+FILTER_EQUIP,装備
+FILTER_CONSUMABLE,消費品
+FILTER_NON_CONSUMABLE,非消費品
+CHARACTER_SORT_DATE_ASC,日付 (昇順)
+CHARACTER_SORT_DATE_DESC,日付 (降順)
+CHARACTER_SORT_ATTACK_ASC,攻撃力 (昇順)
+CHARACTER_SORT_ATTACK_DESC,攻撃力 (降順)
+FILTER_SWORD,剣
+FILTER_SHIELD,盾
+FILTER_BOW,弓
+FILTER_HEART,ハート
+ID,ID
+ATTACK,攻撃力

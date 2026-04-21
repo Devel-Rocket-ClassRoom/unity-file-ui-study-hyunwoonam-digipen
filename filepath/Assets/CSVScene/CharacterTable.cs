@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using static UnityEngine.Rendering.DebugUI;
 //1.CSV파일 (ID / 이름 / 설명 / 공격력..../ 초상화 or 아이콘...)
@@ -28,6 +29,8 @@ public class CharacterTable : DataTable
 {
     private readonly Dictionary<string, CharacterData> table = new Dictionary<string, CharacterData>();
 
+    private List<string> keyList;
+
     public override void Load(string filename)
     {
         table.Clear();
@@ -47,6 +50,8 @@ public class CharacterTable : DataTable
                 Debug.LogError("캐릭터 아이디 중복");
             }
         }
+
+        keyList = table.Keys.ToList();
     }
 
     public CharacterData Get(string id)
@@ -58,5 +63,10 @@ public class CharacterTable : DataTable
         }
 
         return table[id];
+    }
+
+    public CharacterData GetRandom()
+    {
+        return Get(keyList[Random.Range(0, keyList.Count)]);
     }
 }

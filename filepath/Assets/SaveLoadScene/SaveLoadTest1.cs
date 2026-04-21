@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class SaveLoadTest1 : MonoBehaviour
@@ -13,9 +14,18 @@ public class SaveLoadTest1 : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
-            SaveLoadManager.Data = new SaveDataV3();
-            SaveLoadManager.Data.Name = "TEST1234";
-            SaveLoadManager.Data.Gold = 4321;
+            SaveLoadManager.Data = new SaveDataV4();
+            //SaveLoadManager.Data.Name = "TEST1234";
+            //SaveLoadManager.Data.Gold = 4321;
+            ItemData item = new ItemData();
+
+            item.Id = "Item1";
+
+            SaveItemData saveItem = new SaveItemData();
+            saveItem.ItemData = item;
+
+            SaveLoadManager.Data.ItemList.Add(saveItem);
+
             SaveLoadManager.Save();
         }
 
@@ -23,8 +33,16 @@ public class SaveLoadTest1 : MonoBehaviour
         {
             if(SaveLoadManager.Load())
             {
-                Debug.Log(SaveLoadManager.Data.Name);
-                Debug.Log(SaveLoadManager.Data.Gold);
+                //Debug.Log(SaveLoadManager.Data.Name);
+                //Debug.Log(SaveLoadManager.Data.Gold);
+
+                //foreach (var saveItemData in SaveLoadManager.Data.ItemList)
+                //{
+                //    Debug.Log(saveItemData.instanceId);
+                //    Debug.Log(saveItemData.ItemData.Name);
+                //    Debug.Log(saveItemData.creationTime);
+                //}
+
             }
             else
             {

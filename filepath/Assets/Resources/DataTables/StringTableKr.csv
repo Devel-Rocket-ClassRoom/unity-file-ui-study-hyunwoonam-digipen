@@ -22,3 +22,35 @@ Character4Desc,이름은 DDD
 20,공격력은 20
 5,공격력은 5
 50,공격력은 50
+NAME,이름
+DESC,설명
+TYPE,타입
+VALUE,밸류
+COST,코스트
+button1,불러오기
+button2,저장하기
+button3,아이템 생성
+button4,아이템 삭제
+SORT,정렬
+SORT_DATE_ASC,날짜 (오름차순)
+SORT_DATE_DESC,날짜 (내림차순)
+SORT_NAME_ASC,이름 (오름차순)
+SORT_NAME_DESC,이름 (내림차순)
+SORT_COST_ASC,가격 (오름차순)
+SORT_COST_DESC,가격 (내림차순)
+FILTER,필터
+FILTER_ALL,전체
+FILTER_WEAPON,무기
+FILTER_EQUIP,장비
+FILTER_CONSUMABLE,소모품
+FILTER_NON_CONSUMABLE,비소모품
+CHARACTER_SORT_DATE_ASC,날짜 (오름차순)
+CHARACTER_SORT_DATE_DESC,날짜 (내림차순)
+CHARACTER_SORT_ATTACK_ASC,공격력 (오름차순)
+CHARACTER_SORT_ATTACK_DESC,공격력 (내림차순)
+FILTER_SWORD,검
+FILTER_SHIELD,방패
+FILTER_BOW,활
+FILTER_HEART,하트
+ID,아이디
+ATTACK,공격력

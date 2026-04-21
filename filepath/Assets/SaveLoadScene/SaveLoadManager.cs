@@ -1,5 +1,5 @@
 using UnityEngine;
-using SaveDataVC = SaveDataV3;
+using SaveDataVC = SaveDataV4;
 using Newtonsoft.Json;
 using System.IO;
 
@@ -11,7 +11,7 @@ public static class SaveLoadManager
         Encrypted,
     }
 
-    public static SaveMode Mode { get; set; } = SaveMode.Encrypted;
+    public static SaveMode Mode { get; set; } = SaveMode.Text;
 
     public static readonly string SaveDirectory = $"{Application.persistentDataPath}/Save";
 
@@ -34,8 +34,17 @@ public static class SaveLoadManager
         
         return Path.Combine(SaveDirectory, $"{SaveFileName[slot]}{ext}");
     }
-    public static int SaveDataVersion { get; } = 3;
+    public static int SaveDataVersion { get; } = 4;
     public static SaveDataVC Data { get; set; } = new SaveDataVC();
+
+    static SaveLoadManager()
+    {
+        if (!Load())
+        {
+            
+            Debug.LogError("세이브 파일 로드 실패");
+        }
+    }
 
     private static JsonSerializerSettings settings = new JsonSerializerSettings()
     {
@@ -100,7 +109,7 @@ public static class SaveLoadManager
 
         if (!File.Exists(path))
         {
-            return false;
+            return Save();
         }
 
         try

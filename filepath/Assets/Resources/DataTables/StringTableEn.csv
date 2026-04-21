@@ -22,3 +22,32 @@ Character4Desc,Name is DDD
 20,attack is 20
 5,attack is 5
 50,attack is 50
+NAME,NAME
+DESC,DESC
+TYPE,TYPE
+VALUE,VALUE
+COST,COST
+button1,Load
+button2,Save
+button3,Create item
+button4,Delete item
+SORT,Sort
+SORT_DATE_ASC,Date (Ascending)
+SORT_DATE_DESC,Date (Descending)
+SORT_NAME_ASC,Name (Ascending)
+SORT_NAME_DESC,Name (Descending)
+FILTER,Filter
+FILTER_ALL,All
+FILTER_WEAPON,Weapon
+FILTER_EQUIP,Equipment
+FILTER_CONSUMABLE,Consumable
+CHARACTER_SORT_DATE_ASC,Date (Ascending)
+CHARACTER_SORT_DATE_DESC,Date (Descending)
+CHARACTER_SORT_ATTACK_ASC,Attack (Ascending)
+CHARACTER_SORT_ATTACK_DESC,Attack (Descending)
+FILTER_SWORD,Sword
+FILTER_SHIELD,Shield
+FILTER_BOW,Bow
+FILTER_HEART,Heart
+ID,ID
+ATTACK,Attack
