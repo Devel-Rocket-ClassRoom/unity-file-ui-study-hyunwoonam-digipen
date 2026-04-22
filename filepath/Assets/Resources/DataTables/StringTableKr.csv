@@ -31,6 +31,8 @@ button1,불러오기
 button2,저장하기
 button3,아이템 생성
 button4,아이템 삭제
+button5,캐릭터 생성
+button6,캐릭터 삭제
 SORT,정렬
 SORT_DATE_ASC,날짜 (오름차순)
 SORT_DATE_DESC,날짜 (내림차순)

@@ -31,6 +31,8 @@ button1,読み込み
 button2,保存
 button3,項目作成
 button4,項目削除
+button5,文字作成
+button6,文字削除
 SORT,並び替え
 SORT_DATE_ASC,日付 (昇順)
 SORT_DATE_DESC,日付 (降順)

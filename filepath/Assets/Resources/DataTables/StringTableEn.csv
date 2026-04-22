@@ -31,6 +31,8 @@ button1,Load
 button2,Save
 button3,Create item
 button4,Delete item
+button5,Create character
+button6,Delete character
 SORT,Sort
 SORT_DATE_ASC,Date (Ascending)
 SORT_DATE_DESC,Date (Descending)
