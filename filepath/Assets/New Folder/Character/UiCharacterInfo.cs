@@ -7,6 +7,8 @@ public class UiCharacterInfo : MonoBehaviour
     public static readonly string FormatCommon = "{0}: {1}";
 
     public Image imageIcon;
+    public Image weaponIcon;
+    public Image equipIcon;
     public TextMeshProUGUI textId;
     public TextMeshProUGUI textName;
     public TextMeshProUGUI textDesc;
@@ -14,6 +16,8 @@ public class UiCharacterInfo : MonoBehaviour
     public void SetEmpty()
     {
         imageIcon.sprite = null;
+        weaponIcon.sprite = null;
+        equipIcon.sprite = null;
         textId.text = string.Empty;
         textName.text = string.Empty;
         textDesc.text = string.Empty;
@@ -25,6 +29,8 @@ public class UiCharacterInfo : MonoBehaviour
         CharacterData data = saveCharacterData.CharacterData;
 
         imageIcon.sprite = data.SpriteIcon;
+        weaponIcon.sprite = saveCharacterData?.weapon?.SpriteIcon;
+        equipIcon.sprite = saveCharacterData?.equip?.SpriteIcon;
         textId.text =
             string.Format(FormatCommon, DataTableManager.StringTable.Get("ID"), data.Id);
         string id = data.Id.ToString().ToUpper();
